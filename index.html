@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quieres ser mi novia</title>
+  <style>
+    .body {
+      background-color: rgb(220, 20, 153);
+      text-align: center;
+    }
+    .body__title{
+      color:white;
+    }
+    .title{
+      color:white;
+    }
+    .body__img{
+      width: 50%;
+      border-radius: 50%;
+    }
+
+  </style>
+
+</head>
+
+<body class="body">
+    <h1 class="body__title">❤ ¿Quieres ser mi novia? ♥</h1>
+      <img
+        src="https://scontent-lim1-1.xx.fbcdn.net/v/t1.6435-9/119045632_1006298033117220_5679652222515589620_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeECx7PiwjXStZ01FGg8I6FHvhN2m4myLxW-E3abibIvFVYElkqX1VI2dMs6aPK5dtYQXXvRwCcZYWCqGL_ynliW&_nc_ohc=Vdlfz3c6tgIAX-HC0vQ&_nc_ht=scontent-lim1-1.xx&oh=00_AT-Uq3Zx8d9EtIvCil9GpCCgia1NqUSWD_NnpyhHQptU8g&oe=62D07099"
+        alt="Imagen del amor" class="body__img"/>
+        <h2 class="title">Si dices que sí esto podría ser hermoso, además la amistad se hace amor,
+           ¿quieres interntarlo? Si me das tu corazón prometo jamás dañarlo ♥
+
+        </h2>
+    <button id = "yes">SI</button>
+    <button id="no">NO</button>
+  
+
+  <script>
+    const btnsi = document.getElementById('yes');
+    const btno = document.getElementById('no');
+
+    const somos = () =>{
+      alert('♥ Wow, gracias amor por darme la oportunidad de estar contigo :3');
+      location.href = 'https://wa.me/51918817238?text=Si%20quiero%20ser%20tu%20novia%20%E2%99%A5'
+    }
+    const evitar = () =>{
+      btno.style.position = 'absolute';
+      btno.style.top = (Math.random() * window.innerHeight) + 'px';
+      btno.style.left = (Math.random() * window.innerWidth) + 'px';
+
+    }
+    btnsi.addEventListener('click',somos);
+    btno.addEventListener('mouseover', evitar);
+
+  </script>
+</body>
+
+</html>
